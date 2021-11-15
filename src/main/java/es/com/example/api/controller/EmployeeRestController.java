@@ -50,6 +50,7 @@ public class EmployeeRestController {
 	@PostMapping("/employee")
 	public Employee add(@RequestBody Employee employee) {
 		
+		employee.setId(0);
 		service.save(employee);
 		
 		return employee;
@@ -58,8 +59,6 @@ public class EmployeeRestController {
 	@PutMapping("/employee/{employeeId}")
 	public Employee put(@RequestBody Employee employee) {
 
-		employee.setId(0);
-		
 		service.save(employee);
 		
 		return employee;
