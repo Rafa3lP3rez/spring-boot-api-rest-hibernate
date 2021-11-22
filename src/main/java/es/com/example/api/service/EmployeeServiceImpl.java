@@ -5,11 +5,11 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
-
+import org.springframework.stereotype.Service;
 import es.com.example.api.dao.EmployeeDAO;
 import es.com.example.api.entity.Employee;
 
-@Component
+@Service
 public class EmployeeServiceImpl implements EmployeeService {
 
 	private EmployeeDAO employee;
